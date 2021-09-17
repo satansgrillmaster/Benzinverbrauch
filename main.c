@@ -30,8 +30,10 @@ int main() {
 
         // calculate and print consum, update consum per invoice index
         printf("Verbrauch: %.2fL pro 100 Kilometer.\n", gas_consumption(petrol, kilometerDriven));
+
         averageConsum += gas_consumption(petrol, kilometerDriven);
         invoiceIndex++;
+
         printf("Durchschnittsverbrauch: %.2fL auf 100 km in %d Berechnungen.\n",
                averageConsum / invoiceIndex, invoiceIndex);
 
